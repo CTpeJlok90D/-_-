@@ -2,14 +2,12 @@
 {
     internal class Cabinet : Info
     {
-        private CabinetType _cabinetType;
+        public CabinetType CabinetType;
 
-        public CabinetType CabinetType => _cabinetType;
-
-        public Cabinet(string name, string description, CabinetType type) 
-            : base(name, description, DataType.Cabinet)
+        public Cabinet(string name, string description, CabinetType type, bool readOnly = false) 
+            : base(name, description, DataType.Cabinet, readOnly)
         {
-            _cabinetType = type;
+            CabinetType = type;
         }
     }
 }

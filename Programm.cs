@@ -10,7 +10,7 @@ namespace Редактор_расписания
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RootForm());
+            Application.Run(new BaseForm());
         }
     }
 }
